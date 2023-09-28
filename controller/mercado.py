@@ -4,41 +4,39 @@ valorProduto = []
 #Loop do carrinho 
 def addProduto():
     while True:
-        produtos = ('banana' =)
-        # print(" ")
 
-        # print("Digite o produto: ")
-        # addProduto = input()
+        print("Digite o produto: ")
+        addProduto = input()
 
-        # print(" ")
+        print(" ")
 
-        # print("Digite o Valor do produto: ")
-        # addValor = int(input())
+        print("Digite o Valor do produto: ")
+        addValor = int(input())
 
+
+        print("o produto adicionado foi " +addProduto +" com o valor de: R$" + str(addValor)+",00") 
+        carrinho.append(addProduto)
+        valorProduto.append(addValor)
+
+        print(" ")
+
+        print("seu carrinho: ")
+        for i in carrinho:
+            print(i)
+        print(" ")
+
+        print("Valor do produto")
+
+        print(" ")
+
+        for i in valorProduto:
+            print("R$"+str(i)+",00") 
         
-        # print("o produto adicionado foi " +addProduto +" com o valor de: R$" + str(addValor)+",00") 
-        # carrinho.append(addProduto)
-        # valorProduto.append(addValor)
-
-        # print(" ")
-
-        # print("seu carrinho: ")
-        # for i in carrinho:
-        #     print(i)
-        # print(" ")
-
-        # print("Valor do produto")
-
-        # print(" ")
-
-        # for i in valorProduto:
-        #     print("R$"+str(i)+",00") 
+        if addProduto == "" and addValor == 0:
         
-        # if addProduto == "" and addValor == 0:
-        
-        #     carrinho.pop()
-        #     valorProduto.pop()
-        #     break
+            carrinho.pop()
+            valorProduto.pop()
+            break
     
 def deletar():
     print("Voce deseja Deletar algum item do carrinho? (S/n)")
